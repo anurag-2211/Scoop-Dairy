@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block banner_slider %}
+<!-- crousel -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/banner/b1.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'images/banner/b2.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      
+      <div class="carousel-item">
+        <img src="{% static 'images/banner/b3.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      
+      <div class="carousel-item">
+        <img src="{% static 'images/banner/b4.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>      
+      
+    </div>
+  </div>
+
+{% endblock banner_slider %}
+
+
+
+{% block main-content %}
+<div class="container mt-2">
+<br>
+<h4 class="text-center" style="margin-top: -20px; font-size: 16px;" >About Us</h4>
+<br>
+<div class="row container-fluid">
+<p class="fs-6 text-center" style="margin-top: -22px; font-size: 8px;">Scoop Diary is a prominent public limited company with its registered and corporate office situated in Gurgaon Haryana , India. Founded to meet the growing demand for high-quality dairy products, the company has established itself as a leading player in the dairy industry.
+</p>
+</div>
+<br><br>
+<h4 class="text-center" style="margin-top: -50px; font-size: 16px;" >Mission</h4><br>
+<div class="row container-fluid">
+<p class="fs-6 text-center" style="margin-top: -22px; font-size: 8px;">Our mission is to anticipate, understand, and respond to our customers' needs proactively. We achieve this by creating and delivering high-quality products that exceed expectations. Utilizing the latest innovations and convenient distribution channels, we strive to make our exceptional products readily accessible to our customers.
+
+  At Scoop Dairy, we are not just in the business of providing products; we are building lasting relationships, driving positive change, and shaping a future where excellence and customer satisfaction go hand in hand."
+</p>
+</div>
+</div>
+<br><br>
+{% endblock main-content %}
